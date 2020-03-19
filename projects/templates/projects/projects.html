@@ -54,6 +54,7 @@
           <div class="navbar-nav ml-auto">
             <a class="nav-item nav-link" href="#">About</a>
             <a class="nav-item nav-link" href="#">Facebook</a>
+            <a class="nav-item nav-link" href="#">Projects</a>
             <a class="nav-item nav-link" href="#">Blog</a>
           </div>
         </div>
@@ -64,7 +65,7 @@
 
   <section class="jumbotron text-center">
     <div class="container">
-      <h1>Hi! I'm Zedd!</h1>
+      <h1>Zedd's Projects</h1>
       <p class="lead text-muted">How are you? My full name's Zeddrix Fabian. I am currently learning Django as I make this tutorial--that's the truth. Here are my hobbies and my projects.</p>
       <p>
         <a href="mailto:zeddrix.fabian@gmail.com" class="btn btn-primary my-2">Email me</a>
@@ -75,12 +76,12 @@
   <div class="album py-5 bg-light">
     <div class="container">
       <div class="row">
-        {% for hobby in hobbies.all %}
+        {% for project in projects.all %}
         <div class="col-md-4">
           <div class="card mb-4 shadow-sm">
-            <img class="card-img-top" src="{{ hobby.image.url }}" />
+            <img class="card-img-top" src="{{ project.image.url }}" />
             <div class="card-body">
-              <p class="card-text">{{ hobby.summary }}</p>
+              <p class="card-text">{{ project.summary }}</p>
             </div>
           </div>
         </div>
