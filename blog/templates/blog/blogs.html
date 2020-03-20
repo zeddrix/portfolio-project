@@ -79,7 +79,7 @@
           <h3 class="mb-0">{{ blog.title }}</h3>
           <p class="text-info">{{ blog.pub_date }}</p>
           <p class="mb-auto">{{ blog.summary }}</p>
-          <a href="#" class="stretched-link">Continue reading</a>
+          <a href="{% url 'content' blog.id %}" class="stretched-link">Continue reading</a>
         </div>
         <div class="col-auto d-none d-lg-block">
           <img class="img-fluid" src="{{ blog.image.url }}" height="400" width="400" />
