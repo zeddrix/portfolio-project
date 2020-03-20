@@ -35,6 +35,11 @@
         user-select: none;
       }
 
+    .img-max {
+        max-width: 60em;
+        width:100%;
+    }
+
       @media (min-width: 768px) {
         .bd-placeholder-img-lg {
           font-size: 3.5rem;
@@ -72,7 +77,7 @@
     </div>
   </div>
   <div class="text-center">
-     <img class="img-fluid" src="{{ blog.image.url }}"/>
+     <img class="img-fluid img-max" src="{{ blog.image.url }}"/>
   </div>
   <br>
     <div class="container">
