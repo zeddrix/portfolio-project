@@ -2,6 +2,7 @@
 <!doctype html>
 <html lang="en">
   <head>
+    {% load static %}
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="">
@@ -65,11 +66,21 @@
 
   <section class="jumbotron text-center">
     <div class="container">
-      <h1>Hi! I'm Zedd!</h1>
-      <p class="lead text-muted">How are you? My full name's Zeddrix Fabian. I am currently learning Django as I make this tutorial--that's the truth. Here are my hobbies and my projects.</p>
-      <p>
-        <a href="mailto:zeddrix.fabian@gmail.com" class="btn btn-primary my-2">Email me</a>
-      </p>
+      <div
+        class="row no-gutters border rounded overflow-hidden  mb-4 shadow-sm h-md-250 align-items-center">
+        <div class="col-md-4 mb-3 ">
+          <img class="img-fluid" src="{% static 'Zedd.jpg' %}" height="300" width="300"/>        
+        </div>
+        <div class="col-md-8 d-flex flex-column text-center p-2 justify-content-center">
+          <h1>Hi! I'm Zedd!</h1>
+          <p class="lead text-muted">How are you? My full name's Zeddrix Fabian. 
+            I am currently learning Django as I make this tutorial--that's the truth. 
+            Here are my hobbies and my projects.</p>
+          <p>
+            <a href="mailto:zeddrix.fabian@gmail.com" class="btn btn-primary my-2">Email me</a>
+          </p>
+        </div>
+      </div>
     </div>
   </section>
 
